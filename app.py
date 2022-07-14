@@ -5,9 +5,10 @@ from PIL import Image
 from torchvision import transforms
 from io import BytesIO
 
-# Load the model
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model_ft = torch.jit.load('models/VGG16_v4_class_weights_export.pt')
+# Load the model 
+# We will use CPU in this case to make things simpler to depoly
+device = torch.device("cpu")
+model_ft = torch.jit.load('models/VGG16_v4_class_weights_export.pt',map_location=device)
 model_ft.to(device)
 
 # Initialize an instance of FastAPI
