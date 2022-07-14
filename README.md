@@ -54,6 +54,11 @@ Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOq
 
 Note: boat_classification.ipynb has dependencies from src.model_training.py and src.pre_process_data.py
 
+# Simple FastAPI Test
+```bash
+  python -m pytest
+```
+
 # How to run FastAPI locally
 ```bash
   uvicorn app:app --reload
