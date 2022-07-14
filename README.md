@@ -48,6 +48,7 @@ Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOq
 ```bash
   git clone https://github.com/Cawinchan/TAP_assesment.git
   cd TAP_assement 
+  pip install -r requirements.txt 
   code . 
 ```
 
