@@ -1,2 +1,8 @@
+# Remove raw data
 *.jpg
+
+# Remove trained models
 *.pt
+
+# Remove cached 
+*.pyc

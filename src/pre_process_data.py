@@ -3,6 +3,7 @@ from PIL import Image
 import pandas as pd
 import os
 import shutil
+import numpy as np
 
 from torch.utils.data import SubsetRandomSampler
 from sklearn.model_selection import train_test_split
@@ -48,7 +49,7 @@ def build_train_df(IMG_DIR,LABEL_FILENAME):
     train_df = pd.merge(train_labels_df, train_samples_df, how ='inner', on =['image'])
     return train_df
 
-def process_data(IMG_DIR,train_df,dir,classes):
+def process_data(train_df,dir,classes):
     """
     Checks if the data is in the correct format for torchvision's ImageFolder
     root/dog/xxx.png
@@ -77,7 +78,7 @@ def process_data(IMG_DIR,train_df,dir,classes):
                 for img_n in train_df.loc[train_df.category == int(j)].image:
                         try:
                                 # Copy images over
-                                shutil.copy(src=f"{IMG_DIR}/{img_n}", dst=f"{IMG_DIR}/processed_data/{train_dic[img_n]}/{img_n}")
+                                shutil.copy(src=f"{dir}/{img_n}", dst=f"{dir}/processed_data/{train_dic[img_n]}/{img_n}")
                         except KeyError:
                                 # Guarentees completeness as all images must be able to be copied
                                 raise Exception(f"Unable to copy {img_n}")   
