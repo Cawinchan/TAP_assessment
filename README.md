@@ -1,4 +1,4 @@
-# TAP_assesment
+# TAP_assessment
 
 
 # Quick overview
@@ -48,7 +48,7 @@ Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOq
 
 # Quick-Start
 ```bash
-  git clone https://github.com/Cawinchan/TAP_assesment.git
+  git clone https://github.com/Cawinchan/TAP_assessment.git
   cd TAP_assement 
   pip install -r requirements.txt 
   code . 
