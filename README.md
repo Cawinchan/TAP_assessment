@@ -51,6 +51,16 @@ Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOq
   code . 
 ```
 
-
-
 Note: boat_classification.ipynb has dependencies from src.model_training.py and src.pre_process_data.py
+
+# How to run FastAPI locally
+```bash
+  uvicorn app:app --reload
+```
+
+# How to run build Docker Image and run the container
+```bash
+  docker build -t fastapiapp:latest -f docker/Dockerfile .
+  docker run -p 80:80 fastapiapp:latest
+```
+
