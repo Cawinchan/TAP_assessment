@@ -1,5 +1,3 @@
-# Simple Test for ping
-
 from fastapi.testclient import TestClient
 
 from app import app
