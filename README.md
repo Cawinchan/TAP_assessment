@@ -30,6 +30,8 @@ Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOq
   ├── notebooks       <-- Jupyter notebooks
   |   ├── eda.ipynb   <-- Exploratory Data Analysis 
   |   └── boat_classification.ipynb <-- Main Jupyter notebook presentation
+  |
+  ├── boat_classification.pdf <-- PDF version of fully run main Jupyter notebook presentation
   |   
   ├── src
   |   ├── model_training.py    <-- Python Functions for model building
