@@ -10,9 +10,7 @@ Submission for TAP programme
 - Windows10 (OS used)
 - Nvidia with GPU enabled. ([How-to](https://towardsdatascience.com/installing-tensorflow-with-cuda-cudnn-and-gpu-support-on-windows-10-60693e46e781))
 
-Download data [here](https://drive.google.com/drive/folders/18IX5ywPLuNWkNnwosmPEHop672eFEvbq?usp=sharing).
-
-Download models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOqEQ8uccUPDyAi8S8?usp=sharing).
+Download data and models [here](https://drive.google.com/drive/folders/1fHSTbDKZq7RckDvOqEQ8uccUPDyAi8S8?usp=sharing).
 
 # Repository Directiory
 ```
